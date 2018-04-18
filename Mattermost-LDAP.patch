@@ -44,7 +44,8 @@ diff -u -r oauth/config_db.php oauth_patch/config_db.php
 +$port  	  = intval(getenv('DB_PORT'));
 +$host  	  = getenv('DB_HOST');
 +$name  	  = getenv('DB_NAME');
- $type	  = "mysql";
+-$type	  = "pgsql";
++$type	  = "mysql";
 -$username = "oauth";
 -$password = "oauth_secure-pass";
 +$username = getenv('DB_USER');
