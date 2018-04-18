@@ -1,6 +1,6 @@
 FROM centos:7
 
-RUN yum -y install httpd php php-ldap php-pdo php-mysql
+RUN yum -y install httpd php php-ldap php-pdo php-mysql php-pdo_mysql
 COPY oauth/ /var/www/html/oauth/
 COPY entrypoint.sh /root/
 
